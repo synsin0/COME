@@ -5,19 +5,16 @@
 
 The comparison of ground-truth, DOME generation with official checkpoint and COME. The task setting is to use 4-frame 3D-Occ sequences as input and predict the next 6-frame (3-s prediction) sequences. 
  
-<video src="assets/gt_dome_come_3s_results.mp4" controls="controls" width="500" height="300"></video>
-
+https://github.com/user-attachments/assets/f95890fb-ab5a-4f26-b9ec-3b5e44f45a99
 
 
 The comparison of ground-truth, DOME generation with reproduced checkpoint and COME. The task setting is to use 4-frame 3D-Occ sequences as input and predict the next 16-frame (8-s prediction) sequences. 
  
-<video src="assets/gt_dome_come_8s_results.mp4" controls="controls" width="500" height="300"></video>
-
+https://github.com/user-attachments/assets/4d1ec897-578c-469a-a1dd-a9b74f7eb3cf
 
 The COME generation with BEV layouts. The task setting is to use 2-frame 3D-Occ sequences and 8-frame BEV layouts as input and predict the next 6-frame (3-s) sequences. 
  
-<video src="assets/come_with_bev_layout_3s_results.mp4" controls="controls" width="500" height="300"></video>
-
+https://github.com/user-attachments/assets/e511e5df-71ad-42df-beab-c2725d0aad92
 
 # Overview
 COME = Forecasting Guided Generation
