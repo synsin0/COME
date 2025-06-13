@@ -150,7 +150,7 @@ python tools/visualize_demo_control_mask_invisible.py --py-config configs/train_
 ```
 
 
-### Acknoweldgement
+# Acknoweldgements
 Thanks for the excellent works!
 
 [DOME](https://github.com/gusongen/DOME)
