@@ -71,28 +71,30 @@ python -m occforecasting.datasets.nusc_occ3d_dataset
     └── nuscenes_val_occ3d_infos.pkl
 ```
 
+For testing under different conditions, more inputs are needed. They include motion planning [results](TBD), BEV layouts for [training](TBD) and [validation](TBD) sets and 3D occupancy prediction results from [BEVDet](TBD) and [EFFOcc](TBD).
+
 ### Model Zoos
 
 
-| Task Setting | Inputs | Method | Config |
-| --- | --- | --- |  --- |
-| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](Code_COME/configs/train_dome_v2.py)
-| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past2s_future_3s.py)
-| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_mask_invisible_v2.py)
-| Input-4frame-Output-6frame | 3DOcc + Pred Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_3docc_input_pred_traj.py)
-| Input-4frame-Output-6frame | BEVDet + Pred Traj| Stage3-COME-ControlNet | [Config](CCode_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_pred_traj.py)
-| Input-4frame-Output-6frame | BEVDet + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_bevdet_input_gt_traj.py)
-| Input-4frame-Output-6frame | EFFOcc + Pred Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_pred_traj.py)
-| Input-4frame-Output-6frame | EFFOcc + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_gt_traj.py)
-| Input-4frame-Output-16frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](Code_COME/configs/train_dome_v2_8s.py)
-| Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past2s_future_8s.py)
-| Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_8s.py)
-| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage1-COME-World Model | [Config](Code_COME/configs/train_dome_v3_with_bev_layout.py)
-| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past0.5s_future_3s.py)
-| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage3-COME-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_bev_layout_masked.py)
-| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-Small-World Model | [Config](Code_COME/configs/train_dome_v5_small.py)
-| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past2s_future_3s.py)
-| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-Small-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_small_masked.py)
+| Task Setting | Inputs | Method | Config | CKPT |
+| --- | --- | --- |  --- |  --- |
+| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](Code_COME/configs/train_dome_v2.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past2s_future_3s.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_mask_invisible_v2.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + Pred Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_3docc_input_pred_traj.py) | TBD
+| Input-4frame-Output-6frame | BEVDet + Pred Traj| Stage3-COME-ControlNet | [Config](CCode_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_pred_traj.py) | TBD
+| Input-4frame-Output-6frame | BEVDet + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_bevdet_input_gt_traj.py) | TBD
+| Input-4frame-Output-6frame | EFFOcc + Pred Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_pred_traj.py) | TBD
+| Input-4frame-Output-6frame | EFFOcc + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_gt_traj.py) | TBD
+| Input-4frame-Output-16frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](Code_COME/configs/train_dome_v2_8s.py) | TBD
+| Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past2s_future_8s.py) | TBD
+| Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_8s.py) | TBD
+| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage1-COME-World Model | [Config](Code_COME/configs/train_dome_v3_with_bev_layout.py) | TBD
+| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past0.5s_future_3s.py) | TBD
+| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage3-COME-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_bev_layout_masked.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-Small-World Model | [Config](Code_COME/configs/train_dome_v5_small.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](Code_COME/occforecasting/configs/unet/unet_aligned_past2s_future_3s.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-Small-ControlNet | [Config](Code_COME/configs/train_dome_controlnet_small_masked.py) | TBD
 
 ## 🏃 Run the code
 ### OCC-VAE
@@ -151,7 +153,7 @@ python tools/visualize_demo_control_mask_invisible.py --py-config configs/train_
 
 
 # Acknoweldgements
-Thanks for the excellent works!
+This project is built on top of [DOME](https://github.com/gusongen/DOME) and [OccWorld](https://github.com/wzzheng/OccWorld). Thanks for the excellent open-source works!
 
 [DOME](https://github.com/gusongen/DOME)
 
