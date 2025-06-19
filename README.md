@@ -87,7 +87,7 @@ We recommend to download checkpoints with folders under './work_dir'.
 
 | Task Setting | Inputs | Method | Config | Checkpoint |
 | --- | --- | --- |  --- |  --- |
-| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](configs/train_dome_v2.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](configs/train_dome_v2.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/64783e9471084f50a089/)
 | Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](occforecasting/configs/unet/unet_aligned_past2s_future_3s.py) | [CKPT](https://cloud.tsinghua.edu.cn/f/52b77abfe9ae4e379ab5/?dl=1)
 | Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](configs/train_dome_controlnet_mask_invisible_v2.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/49575f0db63b48ecab86/)
 | Input-4frame-Output-6frame | 3DOcc + Pred Traj| Stage3-COME-ControlNet | [Config](configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_3docc_input_pred_traj.py) | Same As Above
@@ -95,15 +95,15 @@ We recommend to download checkpoints with folders under './work_dir'.
 | Input-4frame-Output-6frame | BEVDet + GT Traj| Stage3-COME-ControlNet | [Config](configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_bevdet_input_gt_traj.py) | Same As Above
 | Input-4frame-Output-6frame | EFFOcc + Pred Traj| Stage3-COME-ControlNet | [Config](configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_pred_traj.py) | Same As Above
 | Input-4frame-Output-6frame | EFFOcc + GT Traj| Stage3-COME-ControlNet | [Config](configs/inference_configs/inference_dome_controlnet_mask_invisible_v2_effocc_input_gt_traj.py) | Same As Above
-| Input-4frame-Output-16frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](configs/train_dome_v2_8s.py) | TBD
+| Input-4frame-Output-16frame | 3DOcc + GT Traj | Stage1-COME-World Model | [Config](configs/train_dome_v2_8s.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/ad8b6632ff4c473194c6/)
 | Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](occforecasting/configs/unet/unet_aligned_past2s_future_8s.py) |  [CKPT](https://cloud.tsinghua.edu.cn/f/b0d7de5979aa4631b792/?dl=1)
-| Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](configs/train_dome_controlnet_8s.py) | TBD
-| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage1-COME-World Model | [Config](configs/train_dome_v3_with_bev_layout.py) | TBD
+| Input-4frame-Output-16frame | 3DOcc + GT Traj| Stage3-COME-ControlNet | [Config](configs/train_dome_controlnet_8s.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/4c811c10b2cc421aba10/)
+| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage1-COME-World Model | [Config](configs/train_dome_v3_with_bev_layout.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/351d0731a68c4de2a801/)
 | Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage2-COME-Scene-Centric-Forecasting | [Config](occforecasting/configs/unet/unet_aligned_past0.5s_future_3s.py) | [CKPT](https://cloud.tsinghua.edu.cn/f/0b0197065bf5453eb5ad/?dl=1)
-| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage3-COME-ControlNet | [Config](configs/train_dome_controlnet_bev_layout_masked.py) | TBD
-| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-Small-World Model | [Config](configs/train_dome_v5_small.py) | TBD
+| Input-2frame-Output-6frame | 3DOcc + GT Traj + BEV Layouts | Stage3-COME-ControlNet | [Config](configs/train_dome_controlnet_bev_layout_masked.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/86811cb0d41e4db4a3ea/)
+| Input-4frame-Output-6frame | 3DOcc + GT Traj | Stage1-COME-Small-World Model | [Config](configs/train_dome_v5_small.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/453bc26a6dc748cab3b0/)
 | Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage2-COME-Scene-Centric-Forecasting | [Config](occforecasting/configs/unet/unet_aligned_past2s_future_3s.py) | Same As Above
-| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-Small-ControlNet | [Config](configs/train_dome_controlnet_small_masked.py) | TBD
+| Input-4frame-Output-6frame | 3DOcc + GT Traj| Stage3-COME-Small-ControlNet | [Config](configs/train_dome_controlnet_small_masked.py) | [CKPT](https://cloud.tsinghua.edu.cn/d/135dbdaa63de49eb92db/)
 
 ## 🏃 Run the code
 ### OCC-VAE
