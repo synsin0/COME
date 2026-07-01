@@ -1,6 +1,8 @@
 
 # COME: Adding Scene-Centric Forecasting Control to Occupancy World Model
 
+Clouddisk links will be deprecated. Checkpoints and other necessary infos are updated at [huggingface](https://huggingface.co/synsin0/come).
+
 # Demo Videos
 
 The comparison of ground-truth, DOME generation with official checkpoint and COME. The task setting is to use 4-frame 3D-Occ sequences as input and predict the next 6-frame (3-s prediction) sequences. 
